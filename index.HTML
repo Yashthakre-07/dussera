@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <title>Dussehra Event</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -18,51 +18,50 @@
         }
 
         header {
-            display:grid;
+            display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 3rem;
+            padding: 1rem 3rem;
             background: #282c34;
             color: white;
         }
-      
-nav {
-       background-color: #333;
-       padding: 10px 20px;
-     }
-   
-     nav ul {
-       list-style: none;
-       display: flex;
-       justify-content: center;
-     }
-   
-     nav ul li {
-       margin: 0 20px;
-     }
-   
-     nav ul li a {
-       color: #fff;
-       text-decoration: none;
-       font-size: 18px;
-       transition: color 0.3s ease;
-     }
-   
-     nav ul li a:hover {
-       color: #ff6347;
-       font-size:1.5rem;
-     }
-     @media (max-width: 768px) {
-       nav ul {
-         flex-direction: column;
-         align-items: center;
-       }
-   
-       nav ul li {
-         margin: 10px 0;
-       }
 
-     }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
 
         main {
             padding: 2rem;
@@ -77,49 +76,55 @@ nav {
             color: #ffffff;
         }
 
-        #headi{
-      background-color: #ff6347;
-      text-align: center;
-     }
-     #mainhead{
-      font-weight: 600;
-      text-align: center;
-     }
-     .maindiv{
-     display: flex;
-     padding: 10px;
-     background-color: #cceeef;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        #headi {
+            background-color: #ff6347;
+            text-align: center;
+        }
 
-     }
-     .pngdiv{
-      flex-basis: 70%;
-     padding:50px;
-     image-resolution: 500%;
-    }
-     .aboutclass{
-      flex-basis: 40%;
-     }
-     .number{
-      font-size: 50px;
-      font-weight: 300;
-      color: #979292;
-     }
-     #aboutpara{
-      font-size: 15px;
-      font-family: "Baloo Bhai 2", sans-serif;
+        #mainhead {
+            font-weight: 600;
+            text-align: center;
+        }
 
-      text-align: center;
-      padding: 30px;
-      padding-top: 50px;
-     }
-#mainhead{
-  font-weight: 1000;
-  font-family: "Playwrite GB S", cursive;
-  color: black;
+        .maindiv {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            background-color: #cceeef;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-  font-size: 50px;
-}
+        .pngdiv {
+            flex-basis: 50%;
+            padding: 20px;
+            image-resolution: 500%;
+        }
+
+        .aboutclass {
+            flex-basis: 50%;
+            padding: 20px;
+        }
+
+        .number {
+            font-size: 50px;
+            font-weight: 300;
+            color: #979292;
+        }
+
+        #aboutpara {
+            font-size: 15px;
+            text-align: center;
+            padding: 30px;
+            padding-top: 50px;
+        }
+
+        #mainhead {
+            font-weight: 1000;
+            font-family: "Playwrite GB S", cursive;
+            color: black;
+            font-size: 50px;
+        }
+
         .event, .gallery, .pricing {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -134,49 +139,67 @@ nav {
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-    
-.one{
-    padding-left: 100px;
-    padding-top:100px
-}
-.event {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px;
-}
+        .one {
+            padding-left: 50px;
+            padding-top: 50px;
+        }
 
-.event div {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+        .event {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
 
-.event div img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+        .event div {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-@media (max-width: 900px) {
-    .event {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+        .event div img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
-@media (max-width: 600px) {
-    .event {
-        grid-template-columns: 1fr; 
-    }
-}
+        @media (max-width: 900px) {
+            .event {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .event {
+                grid-template-columns: 1fr;
+            }
+
+            .maindiv {
+                flex-direction: column;
+            }
+
+            .pngdiv, .aboutclass {
+                flex-basis: 100%;
+                padding: 10px;
+            }
+
+            #mainhead {
+                font-size: 35px;
+            }
+
+            #aboutpara {
+                font-size: 14px;
+            }
+        }
+
         footer {
             display: flex;
             justify-content: space-between;
             padding: 1rem;
-            
+            background-color: #282c34;
             color: white;
         }
 
@@ -220,137 +243,130 @@ nav {
                 margin: 0.5rem 0;
             }
 
-            .event, .gallery, .pricing {
-                grid-template-columns: 1fr;
-            }
-
             footer {
                 flex-direction: column;
             }
         }
-        .what{
-    text-align: center;
-    font-size: 60px;
-    font-family: "Playwrite GB S", cursive;
 
-    padding-left: 150px;
-    padding-bottom: 100px;
-}
-.headi{
-    color:red;
-    padding-left: 300px;
-}
-.form1{
-  display:grid;
-padding:10px;
-}
-.form1 h2{
-  color: black;
-}
-.form1 div{
-  padding:10px;
-  
-}
-.form1  form button{
-  justify-content: center;
-}
-.num{
-    font-size: 20px;
-    font-weight:bold;
-}
+        .what {
+            text-align: center;
+            font-size: 40px;
+            font-family: "Playwrite GB S", cursive;
+            padding-bottom: 50px;
+        }
 
-#gallery {
-    padding: 3rem 1rem;
-    background-color: #f5f5f5;
-    text-align: center;
-}
+        .headi {
+            text-align: center;
+            color: red;
+            
+        }
 
-#gallery h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
+        .form1 {
+            display: grid;
+            padding: 10px;
+        }
 
-#gallery span {
-    font-size: 1.2rem;
-    color: #ff6347;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 1rem;
-}
+        .form1 h2 {
+            color: black;
+        }
 
+        .form1 div {
+            padding: 10px;
+        }
 
-.gallery blockquote {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 0.5rem;
-}
+        .form1 form button {
+            justify-content: center;
+        }
 
-.gallery p {
-    font-size: 1rem;
-    color: #333;
-    font-weight: 600;
-}
+        .num {
+            font-size: 20px;
+            font-weight: bold;
+        }
 
-.gallery figure {
-    background: white;
-    padding: 1.5rem;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
+        #gallery {
+            padding: 3rem 1rem;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
 
-.gallery figure blockquote {
-    margin-bottom: 1rem;
-}
+        #gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
+        #gallery span {
+            font-size: 1.2rem;
+            color: #ff6347;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 1rem;
+        }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        .gallery blockquote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
 
-.gallery figure img {
-    margin: 0 auto;
-    transition: transform 0.3s ease;
-}
+        .gallery p {
+            font-size: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
 
-.gallery figure img:hover {
-    transform: scale(1.2);
-}
-.duss{
-    color: black;
-}
-.prc{
-    font-size: 50px;
-    font-weight: bold;
-}
-footer{
-    background-color: #21a1f1;
-}
+        .gallery figure {
+            background: white;
+            padding: 1.5rem;
+            margin: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
 
+        .gallery figure blockquote {
+            margin-bottom: 1rem;
+        }
 
-@media (max-width: 768px) {
-    #gallery h2 {
-        font-size: 2rem;
-    }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
 
-    .gallery {
-        gap: 1rem;
-    }
-}
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery figure img {
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery figure img:hover {
+            transform: scale(1.2);
+        }
+
+        .prc {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .pricing {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .pricing button {
+            font-size: 1.2rem;
+            padding: 0.8rem;
+        }
 
     </style>
 </head>
